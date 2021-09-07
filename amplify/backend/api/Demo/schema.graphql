@@ -1,0 +1,21 @@
+
+type ItemMasterTwo @model
+  @key(name: "byItemName", fields: ["Status", "ItemName"])
+  @key(name: "byItemCat", fields: ["Status", "Category"])
+  @key(name: "byItemBrand", fields: ["Status", "ItemBrand"])
+  @key(name: "byItemID", fields: ["ItemID", "Status"])
+  @auth(rules: [{allow: public}]) {
+  id:ID!
+  ItemID: String!
+  ItemName: String!
+  Category: String!
+  ThumbnailImagePath: String!
+  Description: String!
+  Status: String!
+  LongDesc: String!
+  Weight: String!
+  UOM: String!
+  ItemBrand: String!
+  FullsizeImagePAth: String!
+}
+

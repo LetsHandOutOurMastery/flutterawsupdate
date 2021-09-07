@@ -1,0 +1,63 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "S3Trigger6307b493",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/items"
+    },
+    {
+      "name": "/items",
+      "lambdaFunction": "S3Trigger6307b493",
+      "privacy": {
+        "protected": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ],
+        "unauth": [
+          "/GET"
+        ]
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "api4293f0df",
+  "apiName": "api4293f0df",
+  "functionArns": [
+    {
+      "lambdaFunction": "S3Trigger6307b493"
+    }
+  ],
+  "privacy": {
+    "auth": 2,
+    "unauth": 2,
+    "authRoleName": "amplify-demo-staging-193832-authRole",
+    "unAuthRoleName": "amplify-demo-staging-193832-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "S3Trigger6307b493",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
